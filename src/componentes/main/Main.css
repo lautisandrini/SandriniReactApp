@@ -1,4 +1,14 @@
 .productos{
     margin: 3rem;
-    border: 1px solid black;
+    margin-top: 2rem;
+}
+
+.counter{
+    margin: 2rem;
+}
+
+.subtitulo{
+    margin: 1rem;
+    margin-top: 2rem;
+    text-decoration: underline;
 }

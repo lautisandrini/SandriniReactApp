@@ -5,19 +5,34 @@ import Item from "./Item"
 const ItemListContainer = () => {
     const items = [
         {
-            nombre: 'Creatina',
             id: '1',
-            precio: '$3000'
+            nombre: 'Creatina Star',
+            precio: '$2000',
         },
         {
-            nombre: 'Proteina',
             id: '2',
-            precio: '$1500'
+            nombre: 'Creatina Gentech',
+            precio: '$1800'
         },
         {
-            nombre: 'Aminoacidos',
             id: '3',
-            precio: '$2500'
+            nombre: 'Aminoacidos Star',
+            precio: '$1600'
+        },
+        {
+            id: '4',
+            nombre: 'Aminoacidos Gentech',
+            precio: '$1200'
+        },
+        {
+            id: '5',
+            nombre: 'Proteina Star',
+            precio: '$2000'
+        },
+        {
+            id: '6',
+            nombre: 'Proteina Gentech',
+            precio: '$1500'
         }
         ]
 
@@ -25,7 +40,10 @@ const ItemListContainer = () => {
         <div>
             <Item producto={ items[0] }/>
             <Item producto={ items[1] }/>
-            <Item producto={ items[1] }/>
+            <Item producto={ items[2] }/>
+            <Item producto={ items[3] }/>
+            <Item producto={ items[4] }/>
+            <Item producto={ items[5] }/>
         </div>
     )
 }
