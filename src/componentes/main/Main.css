@@ -1,6 +1,7 @@
 .productos{
     margin: 3rem;
     margin-top: 2rem;
+    color: white;
 }
 
 .counter{
@@ -11,4 +12,5 @@
     margin: 1rem;
     margin-top: 2rem;
     text-decoration: underline;
+    color: white;
 }

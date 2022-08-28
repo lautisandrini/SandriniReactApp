@@ -3,7 +3,7 @@ import CardWidget from "./CartWidget"
 const NavBar = () => {
     return(
         <div>
-            <nav class="navbar navbar-expand-lg bg-danger">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a id="logo" className="Nav" class="navbar-brand" href="#"><img src="./assets/img/OmegaPower.png" className="logoHeader"></img></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
