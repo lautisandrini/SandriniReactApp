@@ -1,33 +1,26 @@
 import CardWidget from "./CartWidget"
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 
 const NavBar = () => {
     return(
         <div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a id="logo" className="Nav" class="navbar-brand" href="#"><img src="./assets/img/OmegaPower.png" className="logoHeader"></img></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contactanos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <Navbar expand="lg">
+                <Container>
+                    <Navbar.Brand href="#"><img alt= "" className="logoHeader" src="/assets/img/OmegaPower.png"></img></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link className="linkNav" href="#link">Sobre Nosotros</Nav.Link>
+                            <Nav.Link className="linkNav" href="#link">Contactanos</Nav.Link>
+                            <Nav.Link className="linkNav" href="#link">Promociones</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
                 <CardWidget/>
-            </nav>
+            </Navbar>
         </div>
     )
 }
