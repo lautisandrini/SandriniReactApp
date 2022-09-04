@@ -1,6 +1,7 @@
 
 import './Main.css'
 import ItemListContainer from "./ItemListContainer"
+import ItemDetailContainer from './ItemDetailContainer'
 
 
 const Main = () => {
@@ -8,6 +9,7 @@ const Main = () => {
         <div>
             <h2 className='subtitulo'>Productos disponibles:</h2>
             <ItemListContainer/>
+            <ItemDetailContainer idProducto={1}/>
         </div>
     )
 }

@@ -17,6 +17,7 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    
 }
 
 .img-card{
@@ -27,5 +28,6 @@
 .itemStyle{   
     border: 3px solid rgba(236, 13, 13, 0.466);
     margin: 2rem;
+    width: 280px;
 }
 

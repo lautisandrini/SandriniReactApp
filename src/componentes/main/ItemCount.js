@@ -17,9 +17,9 @@ const ItemCount = () => {
 
     return (
         <div className="counter">
-            <button onClick={handleRestar} className="btn btn-danger">-</button>
+            <button onClick={handleRestar} className="btn btn-danger" disabled={counter < 1}>-</button>
             <span> {counter} </span>
-            <button onClick={handleSumar} className="btn btn-danger">+</button>
+            <button onClick={handleSumar} className="btn btn-danger" >+</button>
         </div>
     )
 
