@@ -31,3 +31,18 @@
     width: 280px;
 }
 
+.header-navbar {
+    min-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

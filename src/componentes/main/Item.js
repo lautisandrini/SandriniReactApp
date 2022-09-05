@@ -10,7 +10,7 @@ const Item = ( {producto} ) => {
                 <Card.Img className="img-card" variant="top" src={producto.img} />
                 <Card.Body>
                     <Card.Title>{producto.nombre}</Card.Title>
-                    <Link to={`/producto/${producto.id}`} className="btn btn-danger">Ver detalles del producto</Link>
+                    <Link to={`/item/${producto.id}`} className="btn btn-danger">Ver detalles del producto</Link>
                 </Card.Body>
             </Card>
         </div>

@@ -1,7 +1,7 @@
 
  export const stock = [
     {
-        id: '1',
+        id: 1,
         nombre: 'Creatina Star',
         precio: '$2000',
         stock: 20,
@@ -10,7 +10,7 @@
         category:'creatinas'
     },
     {
-        id: '2',
+        id: 2,
         nombre: 'Creatina Gentech',
         precio: '$1800',
         stock: 15,
@@ -19,7 +19,7 @@
         category:'creatinas'
     },
     {
-        id: '3',
+        id: 3,
         nombre: 'Aminoacidos Star',
         precio: '$1600',
         stock: 30,
@@ -28,7 +28,7 @@
         category: 'aminoacidos'
     },
     {
-        id: '4',
+        id: 4,
         nombre: 'Aminoacidos Gentech',
         precio: '$1200',
         stock: 25,
@@ -37,7 +37,7 @@
         category: 'aminoacidos'
     },
     {
-        id: '5',
+        id: 5,
         nombre: 'Proteina Star',
         precio: '$2000',
         stock: 45,
@@ -46,7 +46,7 @@
         category: 'proteinas'
     },
     {
-        id: '6',
+        id: 6,
         nombre: 'Proteina Gentech',
         precio: '$1500',
         stock: 35,
