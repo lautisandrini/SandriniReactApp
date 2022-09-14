@@ -1,8 +1,10 @@
-import { useState } from "react"
+
 import { Link } from 'react-router-dom'
 
 
+
 const ItemCount = ({max, counter, setCounter, handleAgregar}) => {
+
 
     const handleSumar = () => {
         if (counter < max ) {
@@ -22,8 +24,7 @@ const ItemCount = ({max, counter, setCounter, handleAgregar}) => {
             <span className="btnDetail"> {counter} </span>
             <button onClick={handleSumar} className="btn btn-danger" disabled={counter == max}>+</button>
             <hr/>
-            <Link to={'/cart'} onClick={handleAgregar} className="btn btn-danger">Terminar mi compra</Link>
-
+            <button onClick={handleAgregar} className="btn btn-danger" disabled={counter <1}>Agregar al carrito</button>
         </div>
     )
 

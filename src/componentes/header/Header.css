@@ -37,14 +37,24 @@ body{
 
 }
 
-.buttonStyle{
-    border-radius: 100%;
-    border: 5px solid black;
-    width: 100px;
-    height: 100px;
-    margin-right: 5rem;
+.carritoStyle{
+    width: 70px;
+    height: 70px;
+    color: white;
+    text-decoration: none;
+    
 }
 
-.carritoStyle{
-    width: 50px;
+.carritoStyle:hover{
+    color: red;
+    width: 75px;
+    height: 75px;
+}
+
+.span{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    text-decoration: underline;
+    
 }

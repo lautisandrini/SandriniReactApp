@@ -1,11 +1,20 @@
+import { Link } from 'react-router-dom';
+import { BsFillCartFill } from 'react-icons/bs'
+import { useContext } from 'react';
+import CartContext from '../main/CartContext';
 
-
-const CardWidget = () => {
+const CartWidget = () => {
+    
+    const {cartQuantity } = useContext(CartContext)
+    
     return (
-        <button className="buttonStyle">
-            <img alt="una imagen" src="/assets/img/carrito2.png" className="carritoStyle"></img>
-        </button>
+        
+        <div>
+            <Link to='/cart'><BsFillCartFill className='carritoStyle'/><span className='span'>{cartQuantity()}</span></Link>
+        </div>
+        
+
     )
 }
 
-export default CardWidget
+export default CartWidget

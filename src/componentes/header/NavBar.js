@@ -1,4 +1,4 @@
-import CardWidget from "./CartWidget"
+import CartWidget from "./CartWidget"
 import { Link } from 'react-router-dom'
 
 
@@ -12,7 +12,7 @@ const NavBar = () => {
                 <Link to='category/aminoacidos' className='linkNav' >Aminoacidos</Link>
                 <Link to='category/proteinas' className='linkNav' >Proteinas</Link>
             </nav>
-            <CardWidget></CardWidget>
+            <CartWidget></CartWidget>
         </div>
     )
 }

@@ -28,6 +28,7 @@
     border: 3px solid rgba(236, 13, 13, 0.466);
     margin: 2rem;
     width: 280px;
+    border-radius: 10px;
 }
 
 .detailContainer{
@@ -45,6 +46,17 @@
     color: white;
     text-decoration: underline;
     margin-bottom: 1rem;
+}
+
+.detailName2{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cartElement{
+    margin: 1rem;
+    border-bottom: 1px solid white;
 }
 
 .detailImg{
@@ -94,4 +106,10 @@
 .spinnerContainer h2{
     color: white;
     margin: 1rem;
+}
+
+.info{
+    font-size: 20px;
+    color: red;
+    text-shadow: 1px 1px white;
 }
