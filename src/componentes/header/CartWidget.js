@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { BsFillCartFill } from 'react-icons/bs'
 import { useContext } from 'react';
-import CartContext from '../main/CartContext';
+import {CartContext} from '../../context/CartContext';
 
 const CartWidget = () => {
     

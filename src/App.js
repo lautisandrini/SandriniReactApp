@@ -5,7 +5,7 @@ import Header from "./componentes/header/Header";
 import ItemListContainer from "./componentes/main/ItemListContainer";
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import ItemDetailContainer from './componentes/main/ItemDetailContainer';
-import CartContext from './componentes/main/CartContext';
+import {CartContext} from './context/CartContext';
 import Cart from './componentes/main/Cart';
 import { useState } from 'react';
 
