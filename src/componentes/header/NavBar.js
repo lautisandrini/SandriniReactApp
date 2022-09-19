@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 
 
 
+
+
 const NavBar = () => {
+
+
     return(
         <div className="navBar-container">
             <Link to='/'><img alt= "" className="logoHeader" src="/assets/img/OmegaPower.png"></img></Link>
@@ -12,7 +16,8 @@ const NavBar = () => {
                 <Link to='category/aminoacidos' className='linkNav' >Aminoacidos</Link>
                 <Link to='category/proteinas' className='linkNav' >Proteinas</Link>
             </nav>
-            <CartWidget></CartWidget>
+            <CartWidget/>
+
         </div>
     )
 }

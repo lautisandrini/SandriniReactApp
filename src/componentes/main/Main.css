@@ -145,3 +145,13 @@
     border-radius: 8px;
     padding: 3px;
 }
+
+.widget{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.widget-visible{
+    visibility: visible;
+    opacity: 1;
+}

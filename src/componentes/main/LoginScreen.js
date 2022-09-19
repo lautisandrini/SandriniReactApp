@@ -27,15 +27,21 @@ const LoginScreen = () => {
 
     return(
         <div>
-            <div>
-                <h1>Suplementos Power Omega</h1>
+            <div className="navBar-container" id="header">
+                <img alt= "" className="logoHeader" src="/assets/img/OmegaPower.png"></img>
+                <h1 className="subtitulo">Suplementos deportivos Omega Power</h1>
             </div>
-            <h2>Para continuar ingrese su Email y contraseña</h2>
+            <h2 className="detailDesc">Para continuar ingrese su Email y contraseña</h2>
             <form onSubmit={handleSubmit} className="container my-5">
+                <p className="detailStock">E-mail:</p>
                 <input className="form-control" type={'email'} value={email} onChange={handleEmailChange} />
                 <hr/>
+                <p className="detailStock">Contraseña:</p>
                 <input className="form-control" type={'password'} value={pass} onChange={handlePassChange}/>
-                <button type="submit" className="btn btn-danger">Login</button>
+                <hr/>
+                <div className="vaciarContainer">
+                    <button type="submit" className="btn btn-danger btnVaciar">Login</button>
+                </div>
             </form>
         </div>
     )

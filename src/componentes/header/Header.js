@@ -10,9 +10,9 @@ const Header = () => {
     return (
         <div id="header">
             <NavBar/>
-            <div>
+            <div className="user">
                 <small className="usuario">Bienvenido: {user.user}</small>
-                <button onClick={logout} className=" btnLogout btn btn-outline-danger">Logout</button>
+                <button onClick={logout} className=" btnLogout btn btn-outline-danger usuario2">Logout</button>
             </div>
         </div>
     )

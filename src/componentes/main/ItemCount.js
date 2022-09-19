@@ -1,7 +1,4 @@
 
-import { Link } from 'react-router-dom'
-
-
 
 const ItemCount = ({max, counter, setCounter, handleAgregar}) => {
 
@@ -22,7 +19,7 @@ const ItemCount = ({max, counter, setCounter, handleAgregar}) => {
         <div className="counter">
             <button onClick={handleRestar} className="btn btn-danger" disabled={counter < 1}>-</button>
             <span className="btnDetail"> {counter} </span>
-            <button onClick={handleSumar} className="btn btn-danger" disabled={counter == max}>+</button>
+            <button onClick={handleSumar} className="btn btn-danger" disabled={counter === max}>+</button>
             <hr/>
             <button onClick={handleAgregar} className="btn btn-danger" disabled={counter <1}>Agregar al carrito</button>
         </div>
