@@ -5,6 +5,7 @@ import DatosStock from "../../helpers/DatosStock"
 import ItemList from "./ItemList"
 import { useParams } from 'react-router-dom' 
 import { Spinner } from "reactstrap"
+import { useLoginContext } from '../../context/LoginContext'
 
 
 
@@ -35,6 +36,8 @@ const ItemListContainer = () => {
                 setLoading(false)
             })
     }, [categoryId])
+
+    const {user} = useLoginContext()
 
     return (
         <div>
