@@ -27,8 +27,13 @@ const LoginScreen = () => {
 
     return(
         <div>
+            <div>
+                <h1>Suplementos Power Omega</h1>
+            </div>
+            <h2>Para continuar ingrese su Email y contraseña</h2>
             <form onSubmit={handleSubmit} className="container my-5">
                 <input className="form-control" type={'email'} value={email} onChange={handleEmailChange} />
+                <hr/>
                 <input className="form-control" type={'password'} value={pass} onChange={handlePassChange}/>
                 <button type="submit" className="btn btn-danger">Login</button>
             </form>
