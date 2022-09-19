@@ -21,7 +21,7 @@ export const LoginProvider = ({children}) => {
 
     const [user, setUser] = useState({
         user: '',
-        logged: false,
+        logged: true,
     })
 
     const login = (values) => {
