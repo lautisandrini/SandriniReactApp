@@ -48,8 +48,19 @@ export const CartProvider = ({children}) => {
           })
     }
 
+    const terminarCompra = (id) => {
+        Swal.fire({
+            title: '¡Compra realizada con exito!',
+            text: `Tu codigo de compra es: ${id}. Recibiras los detalles al mail`,
+            icon: 'success',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK',
+          })
+          setCart([])
+    }
+
     return (
-        <CartContext.Provider value={ {cart, addToCart, isInCart, cartQuantity, precioTotal, btnVaciar, removeItem} } >
+        <CartContext.Provider value={ {cart, addToCart, isInCart, cartQuantity, precioTotal, btnVaciar, removeItem, terminarCompra} } >
             {children}
         </CartContext.Provider>
 
