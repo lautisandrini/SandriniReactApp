@@ -3,6 +3,8 @@ import {CartContext} from "../../context/CartContext"
 import {BsFillTrashFill} from'react-icons/bs'
 import { Link } from 'react-router-dom'
 import {TbTrashX} from 'react-icons/tb'
+import {AiOutlinePlusCircle} from 'react-icons/ai'
+import {HiOutlineCurrencyDollar} from 'react-icons/hi'
 
 
 
@@ -14,8 +16,11 @@ const CartList = () => {
         <div>
             <h2 className="subtitulo">Carrito de compras:</h2>
             <hr/>
-            <h3 className="detailPrecio2">Precio total: ${precioTotal()}</h3>
-            <h3 className="detailName2" > - Productos seleccionados:</h3>
+            <div className="containerFin">
+                <h3 className="detailPrecio">Precio total: ${precioTotal()}</h3>
+                <Link to="/checkout" className="btn btn-danger btnTermina"> <HiOutlineCurrencyDollar/> Terminar compra</Link>
+            </div>
+            <h3 className="detailName3" > Productos seleccionados:</h3>
             <hr/>
             { cart.map( (item) => (
                 // aca armar un componenete CarItem mas presentable
@@ -32,9 +37,13 @@ const CartList = () => {
             <div className="vaciarContainer">
                 <button onClick={btnVaciar} className="btnRemove3"><TbTrashX/> Vaciar Carrito</button>
             </div>
+
+            <div className="vaciarContainer">
+                <Link to={'/'} className="btn btn-danger btnRemove2"><AiOutlinePlusCircle/> Agregar mas productos</Link>
+            </div>
             
             <div className="vaciarContainer">
-                <Link to="/checkout" className="btn btn-danger btnVaciar"> $ Terminar mi compra $</Link>
+                <Link to="/checkout" className="btn btn-danger btnTermina"> <HiOutlineCurrencyDollar/> Terminar compra</Link>
             </div>
             
         </div>

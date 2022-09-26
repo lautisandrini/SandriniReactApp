@@ -2,6 +2,8 @@ import ItemCount from "./ItemCount"
 import { useContext, useState } from "react";
 import {CartContext} from "../../context/CartContext";
 import { Link } from 'react-router-dom';
+import {BsCart} from 'react-icons/bs'
+import {AiOutlinePlusCircle} from 'react-icons/ai'
 
 
 
@@ -36,7 +38,7 @@ const ItemDetail = ({item}) => {
                 <h4 className="detailPrecio">Precio: ${item.precio}</h4>
                 <hr/>
                 {
-                    isInCart(item.id) ? <div> <p className="info"> ¡Producto agregado al Carrito! </p> <Link to={'/cart'} className="btn btn-danger">Terminar mi compra</Link> </div> : <ItemCount max={item.stock} counter={cantidad} setCounter={setCantidad} handleAgregar={handleAgregar}/>
+                    isInCart(item.id) ? <div> <p className="info"> ¡Producto agregado al Carrito! </p> <Link to={'/'} className="btn btn-danger"> <AiOutlinePlusCircle/> Agregar mas productos</Link> <hr/> <Link to={'/cart'} className="btn btn-danger"> <BsCart/> Ir al carrito</Link> </div> : <ItemCount max={item.stock} counter={cantidad} setCounter={setCantidad} handleAgregar={handleAgregar}/>
                 }
                 
             </div>

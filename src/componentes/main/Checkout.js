@@ -36,7 +36,7 @@ const Checkout = () => {
 
     return (
         <div>
-            <h2>Checkout</h2>
+            <h2 className="subtitulo">Checkout</h2>
             <hr/>
             <form className="container my-5" onSubmit={handleSubmit}>
                 <input name="nombre" onChange={handleInputChange} value={values.nombre} type={'text'} className="my-3 form-control" placeholder="Ingresa tu nombre y apellido"/>
