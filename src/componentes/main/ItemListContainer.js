@@ -38,7 +38,12 @@ const ItemListContainer = () => {
     return (
         <div>
             {
-                loading ? <div className="spinnerContainer"> <h2>Cargando</h2> <Spinner className="spinner"/> </div> : <ItemList productos= {productos}/>
+                loading ? 
+                <div className="spinnerContainer"> <h2>Cargando</h2> <Spinner className="spinner"/> </div> 
+                : 
+                <div>
+                    <h1 className='subtitulo'>Productos disponibles:</h1> <ItemList productos= {productos}/>
+                </div>
             }
         </div>
     )

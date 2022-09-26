@@ -155,3 +155,15 @@
     visibility: visible;
     opacity: 1;
 }
+
+.btnRemove3{
+    background-color: rgba(236, 13, 13, 0.4669);
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 3px;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
