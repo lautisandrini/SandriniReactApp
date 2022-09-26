@@ -53,7 +53,7 @@ export const CartProvider = ({children}) => {
             title: '¡Compra realizada con exito!',
             text: `Tu codigo de compra es: ${id}. Recibiras los detalles al mail`,
             icon: 'success',
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#d33',
             confirmButtonText: 'OK',
           })
           setCart([])
